@@ -49,6 +49,9 @@ class App extends Component {
     );
 
     if (status === PermissionsAndroid.RESULTS.GRANTED) {
+        this.setState({
+          accessError: null
+        });
       return true;
     }
 

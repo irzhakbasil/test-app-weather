@@ -43,7 +43,7 @@ class CurrentWeather extends Component {
     return (
       <View>
         <Text style={styles.header}>Weather at your location</Text>
-        <Text>{accessError}</Text>
+        <Text style={styles.accessError}>{accessError}</Text>
         <View style={styles.placesContainer}>
           <ScrollView>{mapPlaces}</ScrollView>
         </View>
@@ -94,6 +94,11 @@ const styles = StyleSheet.create({
     color: "#a32828",
     alignSelf: "center",
     fontSize: 25
+  },
+  accessError: {
+    alignSelf: "center",
+    color: "orange",
+    fontSize: 20
   }
 });
 
