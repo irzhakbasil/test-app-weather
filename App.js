@@ -49,15 +49,15 @@ class App extends Component {
     );
 
     if (status === PermissionsAndroid.RESULTS.GRANTED) {
-        this.setState({
-          accessError: null
-        });
+      this.setState({
+        accessError: null
+      });
       return true;
     }
 
     if (status === PermissionsAndroid.RESULTS.DENIED) {
       this.setState({
-        accessError: "Aplication need acces to geolocation"
+        accessError: "Aplication need access to geolocation"
       });
       ToastAndroid.show(
         "Location permission denied by user.",
