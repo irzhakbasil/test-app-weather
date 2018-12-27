@@ -20,7 +20,7 @@ class CurrentWeather extends Component {
     if (weatherData)
       currentWeather = (
         <Text style={styles.text}>
-          Temperature: {weatherData.tem} / Humidity: {weatherData.humidity}{" "}
+          Temperature: {weatherData.tem}°C / Humidity: {weatherData.humidity}%
           Time: {weatherData.time}
         </Text>
       );
@@ -60,8 +60,8 @@ const styles = StyleSheet.create({
     width: 350,
     height: 89,
     paddingTop: 18,
-    paddingRight: 30,
-    paddingLeft: 30,
+    paddingRight: 25,
+    paddingLeft: 25,
     paddingBottom: 30,
     borderRadius: 10,
     borderWidth: 1,
@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   },
   text: {
     justifyContent: "center",
-    fontSize: 20,
+    fontSize: 19,
     color: "#fff",
     textAlign: "center"
   },
